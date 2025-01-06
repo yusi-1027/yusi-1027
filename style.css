@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    background-image: url('臺北市數位實驗高級中學 (4)拷貝.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(216, 199, 185, 0.9);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-box input {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    width: 200px;
+}
+
+.news-ticker {
+    position: fixed;
+    top: 70px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    text-align: center;
+    z-index: 90;
+}
+
+main {
+    padding-top: 120px;
+}
+
+.sections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.section {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.section h2 {
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+/* 關於我們頁面樣式 */
+.about-page {
+    padding-top: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 20px 40px;
+}
+
+.hero-section {
+    text-align: center;
+    margin-bottom: 60px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.tagline {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #666;
+}
+
+.mission, .vision, .features {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.vision-grid, .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.vision-item, .feature-item {
+    padding: 20px;
+    background: rgba(216, 199, 185, 0.3);
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.vision-item:hover, .feature-item:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.6;
+    color: #666;
+}
+
+.section.about {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.section.about:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.section.about:active {
+    transform: translateY(0);
+}
+.about-container {
+    max-width: 1200px;
+    margin: 100px auto 0;
+    padding: 20px;
+}
+
+.school-difference, .campus-features, .suitable-students {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+.difference-content {
+    margin-top: 20px;
+}
+
+.difference-content h3 {
+    color: #333;
+    margin: 25px 0 15px;
+    font-size: 1.4em;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.feature-item {
+    background: rgba(216, 199, 185, 0.3);
+    padding: 25px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.feature-item h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+h2 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.8;
+    color: #666;
+    font-size: 1.1em;
+}
