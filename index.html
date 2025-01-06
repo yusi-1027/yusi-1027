@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-SCHOOL</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <nav class="navbar">
+            <div class="logo">T-SCHOOL</div>
+            <div class="search-box">
+                <input type="search" placeholder="搜尋...">
+            </div>
+        </nav>
+        
+        <div class="news-ticker">
+            <div class="news-item">{{ currentNews }}</div>
+        </div>
+
+        <main>
+            <div class="sections">
+                <section class="section about" @click="showAboutContent">
+                    <h2>關於我們<br>ABOUT US</h2>
+                </section>
+                <section class="section admission">
+                    <h2>入學管道<br>ADMISSION</h2>
+                </section>
+                <section class="section resources">
+                    <h2>教學資源<br>RESOURCES</h2>
+                </section>
+                <section class="section exchange">
+                    <h2>互動交流<br>EXCHANGE</h2>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
