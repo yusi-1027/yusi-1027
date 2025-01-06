@@ -60,6 +60,7 @@ main {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .section {
     background: rgba(255, 255, 255, 0.9);
     padding: 40px;
@@ -73,6 +74,7 @@ main {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
+
 .section h2 {
     font-size: 24px;
     line-height: 1.4;
@@ -145,8 +147,9 @@ h3 {
 }
 
 p {
-    line-height: 1.6;
+    line-height: 1.8;
     color: #666;
+    font-size: 1.1em;
 }
 
 .section.about {
@@ -162,6 +165,7 @@ p {
 .section.about:active {
     transform: translateY(0);
 }
+
 .about-container {
     max-width: 1200px;
     margin: 100px auto 0;
@@ -207,17 +211,4 @@ p {
     color: #333;
     margin-bottom: 15px;
     font-size: 1.3em;
-}
-
-h2 {
-    font-size: 2em;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-p {
-    line-height: 1.8;
-    color: #666;
-    font-size: 1.1em;
 }
