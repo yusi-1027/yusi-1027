@@ -17,24 +17,32 @@ body {
     background-attachment: fixed;
 }
 
-/* Homepage specific background */
+/* Homepage background */
 body.home {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), #00000080), url('臺北市數位實驗高級中學 (4)拷貝.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0), #00000080), url('臺北市數位實驗高級中學 (6)拷貝.jpg');
 }
 
-/* Keep existing backgrounds for other pages */
-body.about-page {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), #00000080), url('臺北市數位實驗高級中學 (8)拷貝.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 100%;
+/* About page background */
+body.about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), #00000080), url('臺北市數位實驗高級中學拷貝.jpg');
 }
 
+/* Admission page background */
 body.admission {
-    background-image: url('臺北市數位實驗高級中學 (5)拷貝.jpg');
-}.navbar {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), #00000080), url('臺北市數位實驗高級中學 (5)拷貝.jpg');
+}
+
+/* Curriculum page background */
+body.curriculum {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), #00000080), url('臺北市數位實驗高級中學 (2)拷貝.jpg');
+}
+
+/* Exchange page background */
+body.exchange {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), #00000080), url('臺北市數位實驗高級中學 (8)拷貝.jpg');
+}
+
+.navbar {
     position: fixed;          /* 固定導航欄在視窗頂部 */
     top: 0;                   /* 確保導航欄貼齊視窗頂部 */
     width: 100%;             /* 導航欄寬度佔滿整個視窗 */
@@ -72,7 +80,9 @@ body.admission {
     text-indent: -9999px;
     transition: opacity 0.3s;
     margin-top: 4px;    
-}a.logo:hover {
+}
+
+a.logo:hover {
     opacity: 0.8;
 }
 
@@ -82,6 +92,24 @@ body.admission {
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.2);
     width: 200px;
+}
+
+.more-info {
+    display: flex;
+    align-items: center;
+}
+
+.more-btn {
+    padding: 8px 16px;
+    background-color: #4A4A4A;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.more-btn:hover {
+    background-color: #666666;
 }
 
 .news-ticker {
@@ -119,32 +147,51 @@ main {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(63, 62, 62, 0.243);
 }
-.about-page {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 120px 20px 40px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), #00000080), url('臺北市數位實驗高級中學 (8)拷貝.jpg');
+body.about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), #00000080), url('臺北市數位實驗高級中學拷貝.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    min-height: 100vh;
+    width: 100vw;
+    min-height: 100vh;
+    width: 100%;
 }
-
+.about-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 .hero-section {
     text-align: center;
-    margin-bottom: 60px;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 40px;
+    margin: 120px auto 60px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 60px 40px;
     border-radius: 10px;
+    width: 92%;  /* Increased width for better presentation */
 }
-
 .hero-section h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    font-size: 48px;
+    margin-bottom: 30px;
     color: #333;
+    font-weight: bold;
 }
 
+.motto h2 {
+    font-size: 36px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.motto p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
 h2 {
-    font-size: 3em;
+    font-size: 2em;
     color: #333;
     margin-bottom: 20px;
     text-align: center;
@@ -167,15 +214,34 @@ p {
     color: #666;
     font-size: 1.3em;
 }
-.mission, .vision, .features,
-.school-difference, .campus-features, .suitable-students {
+.mission, .vision, .features {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.school-difference {
     background: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
     padding: 40px;
     margin-bottom: 30px;
+    width: 92%;  /* Reduced width for better focus */
+    margin-left: auto;
+    margin-right: auto;
 }
-
-.hero-section {
+.campus-features, .suitable-students {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 30px;
+    width: 92%;  /* Reduced width for better focus */
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero-section{
     background: rgba(255, 255, 255, 0.7);
     text-align: center;
     margin-bottom: 60px;
@@ -200,14 +266,13 @@ p {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-
 .course-category {
-    background: rgba(216, 199, 185, 0.2);
-    padding: 15px;
-    border-radius: 8px;
-    margin: 10px 0;
+    font-size: 12px;
+    color: #444;
+    margin: 25px 0 15px;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    padding-bottom: 10px;
 }
-
 .modes-content ul {
     list-style-type: none;
     padding: 20px;
@@ -231,16 +296,75 @@ p {
     background-position: center;
     background-attachment: fixed;
     padding-top: 100px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 120px 20px 40px;
 }
 
-.admission-item {
+.admission-container {
+    max-width: 800px;
+    margin: 120px auto 40px;
+    padding: 0 20px;
+}
+
+.admission-content {
+    text-align: center;
+}
+
+.admission-box {
     background: rgba(255, 255, 255, 0.7);
-    padding: 40px;
     border-radius: 10px;
+    padding: 40px;
+    margin-top: 30px;
+}
+
+.admission-header h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.admission-details {
+    text-align: left;
+}
+
+.special-admission {
     margin-bottom: 40px;
+}
+
+.admission-details h4 {
+    font-size: 24px;
+    color: #444;
+    margin: 25px 0 15px;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    padding-bottom: 10px;
+}
+
+.admission-details h5 {
+    font-size: 20px;
+    color: #444;
+    margin: 20px 0 10px;
+    border-left: 4px solid #666;
+    padding-left: 10px;
+}
+
+.admission-details ol {
+    padding-left: 20px;
+}
+
+.admission-details p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    color: #727272;
+}
+
+.admission-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.admission-details li {
+    font-size: 16px;    line-height: 1.8;
+    margin-bottom: 10px;
+    color: #727272;
 }
 
 .hero-section {
@@ -249,20 +373,14 @@ p {
     margin-bottom: 60px;
     padding: 40px;
     border-radius: 10px;
-}.hero-section h1 {
+}
+
+.hero-section h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #333;
 }
-.admission-item {
-    background: rgba(253, 230, 196, 0.6);
-    padding: 40px;
-    border-radius: 10px;
-    margin-bottom: 40px;
-    max-width: 600px;    /* Added max-width to make boxes narrower */
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .section-content {
     margin-top: 30px;
 }
@@ -288,26 +406,6 @@ p {
     color: #666;
     margin-bottom: 15px;
 }
-
-.admission-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 30px;
-}
-
-.admission-item h2 {
-    font-size: 2em;
-    color: #333;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.admission-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
 .menu {
     display: flex;
     gap: 30px;
@@ -356,7 +454,7 @@ p {
     margin: 15px 0;
 }
 .module-item {
-    background: rgba(216, 199, 185, 0.3);
+    background: rgba(216, 199, 185, 0.7);
     padding: 25px;
     border-radius: 8px;
     margin: 20px 0;
@@ -548,7 +646,7 @@ body.curriculum {
 }
 
 body.exchange {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), #00000080), url('臺北市數位實驗高級中學 (7)拷貝.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), #00000080), url('臺北市數位實驗高級中學 (8)拷貝.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -580,3 +678,75 @@ body.exchange {
     font-family: 'Noto Sans TC', sans-serif;  /* 現代感的中文字體 */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
+
+.admission-details h5 {
+    font-size: 20px;
+    color: #444;
+    margin: 20px 0 10px;
+    border-left: 4px solid #666;
+    padding-left: 10px;
+}
+
+.admission-details ol {
+    padding-left: 20px;
+}
+
+.admission-details ol ol {
+    margin: 10px 0;
+}
+
+.special-admission,
+.regular-admission {
+    margin-bottom: 40px;
+}
+.admission-content h2 {
+    color: #ffffff;
+    font-size: 45px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+}
+.curriculum-content h2 {
+    color: #ffffff;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+}
+
+.curriculum-box {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 40px;
+    margin-top: 30px;
+}
+
+.curriculum-box h4 {
+    font-size: 24px;
+    color: #444;
+    margin: 25px 0 15px;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    padding-bottom: 10px;
+}
+
+.curriculum-box h5 {
+    font-size: 20px;
+    color: #444;
+    margin: 20px 0 10px;
+    border-left: 4px solid #666;
+    padding-left: 10px;
+}
+.intro-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.module-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.module-item p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
