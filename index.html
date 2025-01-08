@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
+    <a href="/" class="logo">
+    </a>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T-SCHOOL</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
-<body>
+<body class="home">
     <div id="app">
-        <nav class="navbar">
-            <div class="logo">T-SCHOOL</div>
-            <div class="search-box">
-                <input type="search" placeholder="搜尋...">
+        <header>
+            <div class="navbar">
+                <a href="index.html" class="logo">Tschool</a>
+                <nav class="menu">
+                    <a href="about.html" class="menu-item">關於我們</a>
+                    <a href="admission.html" class="menu-item">入學管道</a>
+                    <a href="curriculum.html" class="menu-item">課程特色</a>
+                    <a href="exchange.html" class="menu-item">互動交流</a>
+                </nav>
+                <div class="search-box">
+                    <input type="text" placeholder="搜尋...">
+                </div>
             </div>
-        </nav>
+        </header>
         
         <div class="news-ticker">
-            <div class="news-item">{{ currentNews }}</div>
+            <h2>最新消息</h2>
+            <!-- 新聞內容 -->
         </div>
 
         <main>
             <div class="sections">
-                <section class="section about" onclick="window.location.href='about.html'">
+                <div class="section about"  onclick="window.location.href='about.html'">
                     <h2>關於我們<br>ABOUT US</h2>
-                </section>
+                </div>
                 
                 <section class="section admission" onclick="window.location.href='admission.html'">
                     <h2>入學管道<br>ADMISSION</h2>
                 </section>
                 
-                <section class="section resources" onclick="window.location.href='resources.html'">
-                    <h2>教學資源<br>RESOURCES</h2>
+                <section class="section resources" onclick="window.location.href='curriculum.html'">
+                    <h2>課程特色<br>CURRICULUM</h2>
                 </section>
                 
                 <section class="section exchange" onclick="window.location.href='exchange.html'">
@@ -39,7 +50,8 @@
                 </section>
             </div>
         </main>
-    </div>
     <script src="main.js"></script>
 </body>
 </html>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600&family=Noto+Sans+TC:wght@400&display=swap" rel="stylesheet">

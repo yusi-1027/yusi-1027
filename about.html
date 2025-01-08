@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
@@ -9,14 +8,23 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
-    <div id="app">
-        <nav class="navbar">
-            <div class="logo">T-SCHOOL</div>
+    <header>
+        <div class="navbar">
+            <a href="/" class="logo">
+                <img src="tschool_灰.png" alt="Tschool Logo">
+            </a>
+            <nav class="menu">
+                <a href="about.html" class="menu-item">關於我們</a>
+                <a href="admission.html" class="menu-item">入學管道</a>
+                <a href="curriculum.html" class="menu-item">課程特色</a>
+                <a href="exchange.html" class="menu-item">互動交流</a>
+            </nav>
             <div class="search-box">
-                <input type="search" placeholder="搜尋...">
+                <input type="text" placeholder="搜尋...">
             </div>
-        </nav>
-        <div class="about-page">
+        </div>
+    </header>
+    <div class="about-page">
             <section class="hero-section">
                 <h1>臺北市數位實驗高級中學</h1>
                 <div class="motto">
