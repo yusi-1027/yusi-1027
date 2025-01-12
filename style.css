@@ -749,4 +749,226 @@ body.exchange {
     line-height: 1.5;
     margin-bottom: 1rem;
 }
+.content-section {
+    margin-top: 100vh;
+    background-color: #333333;
+    padding: 50px 0;
+}
+.article-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
 
+.article-item {
+    width: calc(50% - 10px);
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.article-block h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.article-content {
+    color: #ffffff;
+    text-align: center;
+}
+
+.article-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.history-block {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.article-item a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.article-item a:hover {
+    color: #cccccc;
+}
+
+.achievements-page {
+    background-image: url('臺北市數位實驗高級中學 (3)拷貝.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+.achievements-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.category {
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #808080;
+}
+
+.achievement-card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid #808080;
+}
+
+.achievements-container h1 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+.category h2 {
+    color: #000000;
+    border-bottom: 2px solid #808080;
+    padding-bottom: 10px;
+}
+
+.achievement-card h3 {
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.achievement-card p {
+    color: #000000;
+    line-height: 1.6;
+}
+
+.links a {
+    color: #000000;
+}
+.links {
+    margin-top: 15px;
+}
+
+.links a {
+    color: #ffffff;
+    text-decoration: underline;
+    margin-right: 15px;
+}
+
+.links a:hover {
+    color: #cccccc;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content h1 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+
+.info-box {
+    background-color: #ffffffc3;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-box h2 {
+    color: #000;
+    border-bottom: 2px solid #808080;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.info-content {
+    color: #000;
+}
+
+.info-content h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.info-content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.info-content a {
+    color: #000;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.info-content a:hover {
+    color: #666;
+}
+
+.history-block {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 2px solid #808080;
+    border-radius: 8px;
+    background-color: #454545;
+}
+
+.history-block h2 {
+    color: #454545;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.history-content {
+    color: #ffffff;
+    line-height: 1.8;
+}
+
+.history-content p {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.history-block {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 2px solid #808080;
+    border-radius: 8px;
+    background-color: #333333;
+}
+
+.history-block h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.history-content {
+    color: #ffffff;
+    line-height: 1.8;
+}
+
+.history-content p {
+    margin-bottom: 20px;
+}

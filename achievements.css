@@ -1,0 +1,117 @@
+:root {
+    --main-bg-color: #1A1A1A;
+    --text-color: #ffffff;
+    --border-color: #808080;
+    --hover-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('臺北市數位實驗高級中學 (3)拷貝.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--main-bg-color);
+}
+
+.logo img {
+    height: 50px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.menu-item {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: var(--hover-color);
+}
+
+.more-info {
+    margin-left: 20px;
+}
+
+.more-btn {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.achievements-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.category {
+    margin-bottom: 40px;
+}
+
+.achievement-card {
+    background-color: var(--main-bg-color);
+    border-color: var(--border-color);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #808080;
+}
+
+.achievement-card {
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid #808080;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #ffffff;
+    border-bottom: 2px solid #808080;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.links {
+    margin-top: 15px;
+}
+
+.links a {
+    color: #ffffff;
+    text-decoration: underline;
+    margin-right: 15px;
+}
+
+.links a:hover {
+    color: #cccccc;
+}
